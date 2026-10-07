@@ -1,0 +1,391 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Prática 3 - Personalidades da Tecnologia</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f4f7;
+      color: #222;
+    }
+
+    header {
+      background-color: #1f4e79;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 32px;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 17px;
+    }
+
+    main {
+      width: 90%;
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      color: #1f4e79;
+      border-bottom: 3px solid #1f4e79;
+      padding-bottom: 8px;
+      text-align: left;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+      text-align: left;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .foto {
+      width: 130px;
+      height: 130px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #1f4e79;
+      margin: 5px 0 10px;
+      font-size: 21px;
+    }
+
+    .card p {
+      line-height: 1.5;
+      margin: 8px 0;
+    }
+
+    .card strong {
+      color: #000;
+    }
+
+    .fontes {
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    }
+
+    .fontes ul {
+      line-height: 1.8;
+      padding-left: 25px;
+    }
+
+    footer {
+      background-color: #1f4e79;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 25px;
+      }
+
+      main {
+        width: 94%;
+      }
+
+      .card {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Personalidades da Tecnologia</h1>
+    <p>Prática 3 - Fundamentos de Informática</p>
+  </header>
+
+  <main>
+
+    <!-- MULHERES -->
+    <section>
+      <h2>8 Mulheres que fizeram história na tecnologia</h2>
+
+      <div class="grid">
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#e8b4cb"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M40 45 Q65 10 90 45 Q80 25 65 25 Q48 25 40 45" fill="#333"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#6c5ce7"/>
+          </svg>
+
+          <h3>Ada Lovelace</h3>
+          <p><strong>Contribuição:</strong> Considerada a primeira programadora da história.</p>
+          <p>Ela criou um algoritmo para a Máquina Analítica de Charles Babbage.</p>
+        </article>
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#bde0fe"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M38 48 Q65 15 92 48 L88 35 Q65 10 42 35Z" fill="#654321"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#457b9d"/>
+          </svg>
+
+          <h3>Grace Hopper</h3>
+          <p><strong>Contribuição:</strong> Pioneira da programação de computadores.</p>
+          <p>Participou do desenvolvimento do COBOL e ajudou a popularizar os compiladores.</p>
+        </article>
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#ffd6a5"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M40 48 Q65 15 90 48 L88 32 Q65 12 42 32Z" fill="#222"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#e76f51"/>
+          </svg>
+
+          <h3>Hedy Lamarr</h3>
+          <p><strong>Contribuição:</strong> Desenvolveu, com George Antheil, uma técnica de comunicação por salto de frequência.</p>
+          <p>A ideia influenciou tecnologias modernas de comunicação sem fio.</p>
+        </article>
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#caffbf"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M38 48 Q65 12 92 48 Q80 20 65 20 Q48 20 38 48" fill="#754668"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#2a9d8f"/>
+          </svg>
+
+          <h3>Katherine Johnson</h3>
+          <p><strong>Contribuição:</strong> Matemática da NASA que realizou cálculos fundamentais para missões espaciais.</p>
+          <p>Seus cálculos ajudaram na trajetória da missão que levou John Glenn ao espaço.</p>
+        </article>
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#ffc8dd"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M38 48 Q65 12 92 48 L88 30 Q65 10 42 30Z" fill="#6b4226"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#ff006e"/>
+          </svg>
+
+          <h3>Mary Jackson</h3>
+          <p><strong>Contribuição:</strong> Foi uma das primeiras engenheiras negras da NASA.</p>
+          <p>Trabalhou em pesquisas aeronáuticas e contribuiu para o desenvolvimento da aviação.</p>
+        </article>
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#a2d2ff"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M40 45 Q65 10 90 45 L88 30 Q65 8 42 30Z" fill="#3b3024"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#8338ec"/>
+          </svg>
+
+          <h3>Radia Perlman</h3>
+          <p><strong>Contribuição:</strong> Criou o protocolo Spanning Tree Protocol (STP).</p>
+          <p>Seu trabalho foi fundamental para o funcionamento e organização das redes de computadores.</p>
+        </article>
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#fdffb6"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M38 48 Q65 12 92 48 Q80 22 65 22 Q48 22 38 48" fill="#333"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#fb5607"/>
+          </svg>
+
+          <h3>Margaret Hamilton</h3>
+          <p><strong>Contribuição:</strong> Liderou a equipe responsável pelo software de voo das missões Apollo.</p>
+          <p>Seu trabalho ajudou a tornar possíveis as missões lunares da NASA.</p>
+        </article>
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#d8f3dc"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M38 48 Q65 10 92 48 Q80 20 65 20 Q48 20 38 48" fill="#4a3728"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#40916c"/>
+          </svg>
+
+          <h3>Joan Clarke</h3>
+          <p><strong>Contribuição:</strong> Matemática e criptoanalista britânica.</p>
+          <p>Trabalhou em Bletchley Park e participou dos esforços para decifrar códigos durante a Segunda Guerra Mundial.</p>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- HOMENS -->
+    <section>
+      <h2>8 Homens que fizeram história na tecnologia</h2>
+
+      <div class="grid">
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#cdeffd"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M40 42 Q65 15 90 42 Q80 25 65 25 Q48 25 40 42" fill="#333"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#1d3557"/>
+          </svg>
+
+          <h3>Alan Turing</h3>
+          <p><strong>Contribuição:</strong> Um dos principais nomes da computação teórica.</p>
+          <p>Também teve papel importante na quebra de códigos alemães durante a Segunda Guerra Mundial.</p>
+        </article>
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#ffe5d9"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M40 42 Q65 15 90 42 Q80 25 65 25 Q48 25 40 42" fill="#6b4226"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#457b9d"/>
+          </svg>
+
+          <h3>Tim Berners-Lee</h3>
+          <p><strong>Contribuição:</strong> Criador da World Wide Web.</p>
+          <p>Desenvolveu tecnologias fundamentais da Web, como HTML, HTTP e URLs.</p>
+        </article>
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#d9ed92"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M40 42 Q65 15 90 42 Q80 25 65 25 Q48 25 40 42" fill="#222"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#184e77"/>
+          </svg>
+
+          <h3>Steve Jobs</h3>
+          <p><strong>Contribuição:</strong> Cofundador da Apple.</p>
+          <p>Foi uma figura importante na popularização dos computadores pessoais, smartphones e outros produtos tecnológicos.</p>
+        </article>
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#bde0fe"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M40 42 Q65 15 90 42 Q80 25 65 25 Q48 25 40 42" fill="#3a2f2f"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#0077b6"/>
+          </svg>
+
+          <h3>Bill Gates</h3>
+          <p><strong>Contribuição:</strong> Cofundador da Microsoft.</p>
+          <p>Teve grande influência na popularização dos computadores pessoais e dos sistemas operacionais.</p>
+        </article>
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#ffd6a5"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M40 42 Q65 15 90 42 Q80 25 65 25 Q48 25 40 42" fill="#333"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#9b2226"/>
+          </svg>
+
+          <h3>Mark Zuckerberg</h3>
+          <p><strong>Contribuição:</strong> Cofundador do Facebook.</p>
+          <p>Participou da criação de uma das maiores redes sociais da história da internet.</p>
+        </article>
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#caf0f8"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M40 42 Q65 15 90 42 Q80 25 65 25 Q48 25 40 42" fill="#4b3832"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#023e8a"/>
+          </svg>
+
+          <h3>Linus Torvalds</h3>
+          <p><strong>Contribuição:</strong> Criador do kernel Linux.</p>
+          <p>O Linux se tornou uma das principais bases de sistemas operacionais e servidores no mundo.</p>
+        </article>
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#e9c46a"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M40 42 Q65 15 90 42 Q80 25 65 25 Q48 25 40 42" fill="#111"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#264653"/>
+          </svg>
+
+          <h3>James Gosling</h3>
+          <p><strong>Contribuição:</strong> Criador da linguagem de programação Java.</p>
+          <p>Java se tornou uma linguagem amplamente utilizada em aplicações, sistemas e dispositivos.</p>
+        </article>
+
+        <article class="card">
+          <svg class="foto" viewBox="0 0 130 130">
+            <circle cx="65" cy="65" r="60" fill="#cdb4db"/>
+            <circle cx="65" cy="50" r="25" fill="#f5c6a5"/>
+            <path d="M40 42 Q65 15 90 42 Q80 25 65 25 Q48 25 40 42" fill="#3d2b1f"/>
+            <path d="M35 115 Q40 75 65 75 Q90 75 95 115" fill="#7209b7"/>
+          </svg>
+
+          <h3>Dennis Ritchie</h3>
+          <p><strong>Contribuição:</strong> Criador da linguagem de programação C.</p>
+          <p>Também participou do desenvolvimento do sistema operacional Unix.</p>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- FONTES -->
+    <section class="fontes">
+      <h2>Fontes da pesquisa</h2>
+
+      <ul>
+        <li>Computer History Museum — História da computação.</li>
+        <li>NASA — Biografias e contribuições de cientistas e engenheiros.</li>
+        <li>Encyclopaedia Britannica — Biografias de personalidades da tecnologia.</li>
+        <li>W3C — História e desenvolvimento da World Wide Web.</li>
+        <li>Microsoft — História da empresa e da computação pessoal.</li>
+        <li>Linux Foundation — História e desenvolvimento do Linux.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Prática 3 - Fundamentos de Informática</p>
+  </footer>
+
+</body>
+</html>
+```
